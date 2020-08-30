@@ -1,0 +1,415 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body{
+    background-image: url(../_imagens/estampa-lateral.jpg);
+    width: 100%;
+    overflow-x: hidden ;
+    background-position-x: 15%;
+}
+
+
+div#interface{
+    background-color:#ffffff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 0px 50px 0px 50px;
+    height: 95%;    
+}
+
+header#cabecalho{
+        background: url(../_imagens/estampa-cabecalho.png);
+        height: 195px;
+        margin: -70px;
+        padding: -25px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        margin-bottom: 15px;
+        width: 112%;
+        overflow: hidden;
+
+}
+header#cabecalho h3{
+    font-size: 12pt;
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 125px;
+    font-family: sans-serif;
+    color: #7229ba;
+    text-decoration-line: underline;
+}
+
+a{
+    text-decoration: none;
+    transition: 2s;
+}
+
+img#logo-topo{
+    width: 150px;
+    display: block;
+    position: absolute;
+    margin-top:50px ;
+}
+
+input#iBarra-pesquisa{
+    height: 50px;
+    width: 300px;
+    display: inline-block;
+    position: relative;
+    margin-left: 40%;
+    font-size: 20pt;
+    top: 75px;
+    
+}
+img#icone-pesq{
+    height: 51px;
+    position: relative;
+    left: -5px;
+    top: 92px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+input#iMenu{
+    display: none;
+}
+
+
+img#hamb-buttom{
+    display: block;
+    position: absolute;
+    width: 35px;
+    float: right;
+    margin-right: 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 25px;
+    right: 0%;
+    
+
+}
+.barra-lateral{
+    background:url(../_imagens/estampa-nav.jpg);
+    height: 100%;
+    width: 300px;
+    top: 138px;
+    position: absolute;
+    transition: 0.2s linear;
+    box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.4);
+    right:-350px;
+    overflow: hidden;
+    z-index: +3;
+    
+
+}
+input#iMenu:checked  ~ .barra-lateral{
+    right: -10px;
+}
+
+nav#receitas{
+    width: 100%;
+    position: absolute;
+    top: 0px; 
+}
+
+.link{
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 12pt;
+    transition: 0.2s linear;
+    color: #f9f9f9;
+    border-bottom: 2px ridge #222222;
+    border-style: dotted;
+    margin-top: -20px;
+}
+.icone-receita{
+    width: 175px;
+    left: 150px;
+    margin-left: 50px;
+    transition: all 50ms ease-in;
+    margin-bottom: 0px;
+    padding: 0px;
+
+    
+    
+}
+.icone-receita:hover{
+    transform: scale(1.2);
+}
+
+
+#galeria-receitas{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    float: left;
+}
+
+
+
+ul#galeria-receitas{
+    top: 130px;
+    list-style: none;
+    width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    list-style: none;
+    left: 5%;
+    position: absolute;
+    
+}
+
+#foto-galeria-1{
+    background: url(../_imagens/receita-bolinho_de_chuva.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+    z-index: +1;
+
+
+}
+#foto-galeria-2{
+    background: url(../_imagens/receita-de-bala-de-caramelo.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+    z-index: +1;
+
+
+}
+#foto-galeria-3{
+    background: url(../_imagens/receita-de-cheesecake-tradicional.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+    z-index: +1;
+
+
+}
+#foto-galeria-4{
+    background: url(../_imagens/receita-torta-salgada.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+    z-index: +1;
+
+
+}
+#foto-galeria-5{
+    background: url(../_imagens/receitas-caldo-frango1920x640.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+    z-index: +1;
+
+}
+#foto-galeria-6{
+    background: url(../_imagens/receitas-lasanha_bolonhesa.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+    z-index: +2;
+
+
+}
+
+ul#galeria-receitas li{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+    margin-bottom: 1px;
+    border: solid 2px #ffffff;
+    background-color: white;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in;
+}
+ul#galeria-receitas span{
+    display: none;
+}
+
+ul#galeria-receitas li:hover{
+    transform: scale(1.3);
+}
+
+div.receitas{
+    position: absolute;
+    display: block;
+    width: 750px;
+    height: 430px;
+    left: 450px;
+    top: 10px;
+    border: dotted 5px whitesmoke;
+    transition: all 0.2s ease-out;
+}
+div#receitas div{
+    display: none;
+    transition: all 0.2s ease-out;
+    
+}
+div#receitas h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 36pt;
+    font-family: 'Dancing Script', cursive;
+    color: whitesmoke;
+
+}
+div#receitas p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 15pt;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+#foto-galeria-1:hover ~ div#receita-1{
+    display: block;
+    background: url(../_imagens/fundo-bolinho-de-chuva.jpg);
+    z-index: +1;
+
+}
+#foto-galeria-2:hover ~ div#receita-2{
+    display: block;
+    background: url(../_imagens/fundo-bala-de-caramelo.jpg);
+    z-index: +1;
+
+}
+#foto-galeria-3:hover ~ div#receita-3{
+    display: block;
+    background: url(../_imagens/fundo-chesscake.jpg);
+    z-index: +1;
+
+}
+#foto-galeria-4:hover ~ div#receita-4{
+    display: block;
+    background: url(../_imagens/fundo-torta-de-frango.jpg);
+    z-index: +1;
+
+}
+#foto-galeria-5:hover ~ div#receita-5{
+    display: block;
+    background: url(../_imagens/fundo-caldo-de-frango.jpg);
+    z-index: +1;
+
+}
+#foto-galeria-6:hover ~ div#receita-6{
+    display: block;
+    background: url(../_imagens/fundo-lasanha-a-bolonhesa.jpg);
+    z-index: +1;
+
+}
+div#titulo h1#bolo-de-chuva{
+    margin-top: 550px;
+    left: 50%;
+}
+div#titulo{
+    margin-top: 150px;
+    left: 50%;
+}
+
+div#titulo h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25pt;
+    color: whitesmoke;
+    background-color: #dc6c6c;
+    text-align: center;
+    padding: -10px;
+    display: block;
+    
+}
+div#titulo img#icone{
+    display: block;
+    width: 39px;
+    margin-top: -66.5px;
+    margin-left: 60%;
+    padding: -10px;
+    background-color: #dc6c6c;
+    
+    
+}
+div#quem-somos{
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    width: 700px;
+    height: 360px;
+    border  : dotted 5px black;
+
+
+}
+div#quem-somos h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 56pt;
+    font-family: 'Dancing Script', cursive;
+}
+div#quem-somos p{
+    font-family: 'Inconsolata', monospace;
+    font-size: 20pt;
+    margin: 10px;
+}
+div.receita img{
+    border-radius: 50%;
+    width: 300px;
+    border: #dc6c6c dotted 3px;
+    position: absolute;
+}
+div.receita ul{
+    display: block;
+    margin-left: 30%;
+}
+div.receita li {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20pt;
+    margin: 10px;
+}
+
+div.ingredientes h2{
+    margin: 75px 400px 0px 400px;
+    padding: 0px;
+    font-size: 26pt;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color: #ffdd81;
+    color: whitesmoke;
+}
+div.ingredientes img{
+    width: 60px;
+    top: -40px;
+    left: 60%;
+    border: none;
+    position: relative;
+    
+}
+
+div.modo-de-preparo h2{
+    background-color: #81ffab;
+    margin: 75px 400px 0px 400px;
+    padding: 0px;
+    font-size: 26pt;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: whitesmoke;
+}
+div.receita h3{
+    font-family: 'Inconsolata', monospace;
+    font-size: 20pt;
+    margin: 10px;
+    font-weight:bold ;
+}
+div.modo-de-preparo img{
+    width: 60px;
+    top: -40px;
+    left: 60%;
+    border: none;
+    position: relative;
+    
+}
+
+footer#rodape{
+    font-size:9pt ;
+    text-align: center;
+    margin-top: 25%;
+    top: 150px;
+}
