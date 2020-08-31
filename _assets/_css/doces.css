@@ -1,0 +1,77 @@
+#receita-n-1{
+    margin-top: 550px;
+}
+
+ul#galeria-receitas{
+    top: 130px;
+    list-style: none;
+    width: 100px;
+    margin: 0 auto;
+    padding: 5px;
+    list-style: none;
+    left: 15%;
+    position: absolute;
+
+    
+}
+#foto-galeria-1{
+    background: url(../_imagens/receita-bolinho_de_chuva.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 170px 170px;
+    background-color: #ffffff;
+    z-index: +1;
+    border-radius: 50%;
+
+
+}
+#foto-galeria-2{
+    background: url(../_imagens/receita-de-cheesecake-tradicional.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 170px 170px;
+    background-color: #ffffff;
+    z-index: +1;
+    border-radius: 50%;
+
+}
+#foto-galeria-3{
+    background: url(../_imagens/receitas-lasanha_bolonhesa.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 350px 350px;
+    background-color: #ffffff;
+    z-index: +2;
+    border-radius: 50%;
+    
+}
+
+#foto-galeria-1:hover ~ div#receita-1{
+    display: block;
+    background: url(../_imagens/fundo-bolinho-de-chuva.jpg);
+    z-index: +1;
+    left: 300px;
+
+}
+#foto-galeria-2:hover ~ div#receita-2{
+    display: block;
+    background: url(../_imagens/fundo-bala-de-caramelo.jpg);
+    z-index: +1;
+    left: 300px;
+
+}
+#foto-galeria-3:hover ~ div#receita-3{
+    display: block;
+    background: url(../_imagens/fundo-chesscake.jpg);
+    z-index: +1;
+    left: 300px;
+
+}
+ul#galeria-receitas li{
+    float: left;
+    width: 170px;
+    height: 170px;
+    margin: 1px;
+    margin-bottom: 1px;
+    border: solid 2px #ffffff;
+    background-color: white;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in;
+}
